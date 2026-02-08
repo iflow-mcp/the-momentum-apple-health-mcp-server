@@ -10,5 +10,11 @@ mcp = FastMCP(settings.PROJECT_NAME)
 
 mcp.mount(mcp_router)
 
-if __name__ == "__main__":
+
+def main() -> None:
+    """Main entry point for MCP server"""
     mcp.run()
+
+
+if __name__ == "__main__":
+    main()
