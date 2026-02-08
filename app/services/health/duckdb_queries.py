@@ -19,7 +19,7 @@ from app.services.health.sql_helpers import (
 )
 
 client = DuckDBClient()
-con = duckdb.connect(client.path, read_only=True)
+con = duckdb.connect(client.path, read_only=False) if Path(client.path).exists() else duckdb.connect(client.path, read_only=False); con.execute("CREATE TABLE IF NOT EXISTS records (type VARCHAR, value VARCHAR, date VARCHAR)")
 
 
 def get_health_summary_from_duckdb() -> list[dict[str, Any]]:
