@@ -1,0 +1,1 @@
+{"serverConfig": "{\"mcpServers\":{\"apple-health-mcp-server\":{\"command\":\"uvx\",\"args\":[\"--from\",\"iflow-mcp_the-momentum-apple-health-mcp-server\",\"start\",\"--transport\",\"stdio\"],\"values\":{}}}}"}
